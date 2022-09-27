@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".brushing_teeth"
+    android:orientation="vertical"
+    android:background="@color/sky"
+    >
+
+    <Button
+        android:id="@+id/btn_move_dd1"
+        android:layout_width="121dp"
+        android:layout_height="92dp"
+        android:layout_gravity="center"
+        android:text="일반인"
+        android:backgroundTint="@color/bl"
+
+        />
+    <Button
+        android:id="@+id/btn_move_dd2"
+        android:layout_width="121dp"
+        android:layout_height="92dp"
+        android:layout_gravity="center"
+        android:text="잇몸질 환자"
+        android:backgroundTint="@color/bl"
+
+        />
+    <Button
+        android:id="@+id/btn_move_dd3"
+        android:layout_width="121dp"
+        android:layout_height="92dp"
+        android:layout_gravity="center"
+        android:text="교정환자"
+        android:backgroundTint="@color/bl"
+
+        />
+
+
+</LinearLayout>
