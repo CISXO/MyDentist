@@ -10,8 +10,24 @@
     tools:context=".MainActivity"
     android:layout_gravity=""
     android:background="@color/sky"
-
     >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:title="My Dentist"
+
+        >
+        <ImageButton
+            android:id="@+id/btn_login"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:background="@drawable/login"
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
 
 
     <ImageView
