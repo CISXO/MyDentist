@@ -7,6 +7,7 @@
     tools:context=".brushing_teeth"
     android:orientation="vertical"
     android:background="@color/sky"
+    android:gravity="center"
     >
 
     <Button
