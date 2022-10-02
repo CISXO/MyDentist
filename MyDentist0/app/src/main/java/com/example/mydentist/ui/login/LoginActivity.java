@@ -5,11 +5,13 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -22,7 +24,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mydentist.MainActivity;
 import com.example.mydentist.R;
+import com.example.mydentist.RegisterActivity;
 import com.example.mydentist.ui.login.LoginViewModel;
 import com.example.mydentist.ui.login.LoginViewModelFactory;
 import com.example.mydentist.databinding.ActivityLoginBinding;
@@ -31,6 +35,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
     private ActivityLoginBinding binding;
+    private Button register;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -38,6 +43,18 @@ public class LoginActivity extends AppCompatActivity {
 
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+
+
+        register = findViewById(R.id.register);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
