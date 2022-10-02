@@ -6,11 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".SubActivity3"
     android:background="@color/sky"
+    android:gravity="center"
+    android:orientation="vertical"
     >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hi3"/>
-
+        android:gravity="top"
+        android:layout_marginBottom="110dp"
+        android:text="내원 데이터"
+        android:textSize="30dp"
+        android:textColor="@color/bl"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"/>
 </LinearLayout>
