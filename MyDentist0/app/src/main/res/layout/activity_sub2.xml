@@ -9,6 +9,19 @@
     android:orientation="vertical"
     android:gravity="center"
     >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:layout_marginBottom="110dp"
+        android:text="예방 관리법"
+        android:textSize="30dp"
+        android:textColor="@color/bl"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+
     <Button
         android:id="@+id/btn_move_teeth1"
         android:layout_width="121dp"
