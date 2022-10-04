@@ -30,29 +30,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        UserDatabase database = Room.databaseBuilder(getApplicationContext(), UserDatabase.class, "MyDentist")
-                .fallbackToDestructiveMigration()   //스키마 데이타베이스 버전변경 가능
-                .allowMainThreadQueries()           //메인 쓰레드에서 db에 Io(Input 입력, output 출력) 가능하게함
-                .build();
-
-        mUserDao = database.userDao(); //interface 객체 할당
+//        UserDatabase database = Room.databaseBuilder(getApplicationContext(), UserDatabase.class, "MyDentist")
+//                .fallbackToDestructiveMigration()   //스키마 데이타베이스 버전변경 가능
+//                .allowMainThreadQueries()           //메인 쓰레드에서 db에 Io(Input 입력, output 출력) 가능하게함
+//                .build();
+//
+//        mUserDao = database.userDao(); //interface 객체 할당
 
 //        데이타 삽입
-        User user = new User(); // 객체 인스턴스 생성
-        user.setName("Jo");
-        user.setAge("25");
-        user.setEmail("cisxo@naver.com");
-        user.setYear("19980430");
-        user.setPasswd("2248");
-        mUserDao.setInsertUser(user);
-        List<User> userList = mUserDao.getUserAll();
-        //데이타 조회
-        for (int i=0; i< userList.size(); i++) {
-            Log.d("TEST", userList.get(i).getName() + "\n"
-            + userList.get(i).getAge()+ "\n" + userList.get(i).getEmail()
-            + "\n" + userList.get(i).getPasswd()+"\n" + userList.get(i).getYear()
-                    +"\n");
-        }
+//        User user = new User(); // 객체 인스턴스 생성
+//        user.setName("Jo");
+//        user.setAge("25");
+//        user.setEmail("cisxo@naver.com");
+//        user.setYear("19980430");
+//        user.setPasswd("2248");
+//        mUserDao.setInsertUser(user);
+//        List<User> userList = mUserDao.getUserAll();
+//        //데이타 조회
+//        for (int i=0; i< userList.size(); i++) {
+//            Log.d("TEST", userList.get(i).getName() + "\n"
+//            + userList.get(i).getAge()+ "\n" + userList.get(i).getEmail()
+//            + "\n" + userList.get(i).getPasswd()+"\n" + userList.get(i).getYear()
+//                    +"\n");
+//        }
         //데이타 수정
 //        User user2 = new User(); // 객체 인스턴스 생성
 //        user2.setId(1);
@@ -67,39 +67,39 @@ public class MainActivity extends AppCompatActivity {
 //        User user3 = new User();
 //        user3.setId(2);
 //        mUserDao.setDeleteUser(user3);
-
-        TeethDatabase database1 = Room.databaseBuilder(getApplicationContext(), TeethDatabase.class, "Myden10")
-                .fallbackToDestructiveMigration()
-                .allowMainThreadQueries()
-                .build();
-
-        mTeethDao = database1.teethDao();
-
-        Teeth teeth = new Teeth();
-        teeth.setTeeth1("4");
-        teeth.setTeeth2("2");
-        teeth.setTeeth3("2");
-        teeth.setTeeth4("2");
-        teeth.setTeeth5("2");
-        teeth.setTeeth6("2");
-        teeth.setTeeth7("2");
-        teeth.setTeeth8("2");
-        teeth.setLocate("UL");
-        mTeethDao.setInsertTeeth(teeth);
-        List<Teeth> teethList = mTeethDao.getUserAll();
-
-        for (int i=0; i< teethList.size(); i++) {
-            Log.d("TEST", teethList.get(i).getTeeth1() + "\n" +
-                    teethList.get(i).getTeeth2() + "\n" +
-                    teethList.get(i).getTeeth3() + "\n" +
-                    teethList.get(i).getTeeth4() + "\n" +
-                    teethList.get(i).getTeeth5() + "\n" +
-                    teethList.get(i).getTeeth6() + "\n" +
-                    teethList.get(i).getTeeth7() + "\n" +
-                    teethList.get(i).getTeeth8() + "\n" +
-                    teethList.get(i).getId() + "\n" +
-                    teethList.get(i).getLocate() + "\n");
-        }
+//
+//        TeethDatabase database1 = Room.databaseBuilder(getApplicationContext(), TeethDatabase.class, "Myden10")
+//                .fallbackToDestructiveMigration()
+//                .allowMainThreadQueries()
+//                .build();
+//
+//        mTeethDao = database1.teethDao();
+//
+//        Teeth teeth = new Teeth();
+//        teeth.setTeeth1("4");
+//        teeth.setTeeth2("2");
+//        teeth.setTeeth3("2");
+//        teeth.setTeeth4("2");
+//        teeth.setTeeth5("2");
+//        teeth.setTeeth6("2");
+//        teeth.setTeeth7("2");
+//        teeth.setTeeth8("2");
+//        teeth.setLocate("UL");
+//        mTeethDao.setInsertTeeth(teeth);
+//        List<Teeth> teethList = mTeethDao.getUserAll();
+//
+//        for (int i=0; i< teethList.size(); i++) {
+//            Log.d("TEST", teethList.get(i).getTeeth1() + "\n" +
+//                    teethList.get(i).getTeeth2() + "\n" +
+//                    teethList.get(i).getTeeth3() + "\n" +
+//                    teethList.get(i).getTeeth4() + "\n" +
+//                    teethList.get(i).getTeeth5() + "\n" +
+//                    teethList.get(i).getTeeth6() + "\n" +
+//                    teethList.get(i).getTeeth7() + "\n" +
+//                    teethList.get(i).getTeeth8() + "\n" +
+//                    teethList.get(i).getId() + "\n" +
+//                    teethList.get(i).getLocate() + "\n");
+//        }
 
 
 //        UserDatabase database = Room.databaseBuilder(getApplicationContext(), UserDatabase.class, "MyDentist")
