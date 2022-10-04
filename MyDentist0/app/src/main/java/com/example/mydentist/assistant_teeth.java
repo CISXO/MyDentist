@@ -16,7 +16,7 @@ public class assistant_teeth extends AppCompatActivity {
 
 
         VideoView videoView = findViewById(R.id.video_view5);
-        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.momovie;
+        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.video2;
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
 
