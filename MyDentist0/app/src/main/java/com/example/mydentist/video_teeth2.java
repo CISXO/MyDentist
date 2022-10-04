@@ -16,7 +16,7 @@ public class video_teeth2 extends AppCompatActivity {
 
 
         VideoView videoView = findViewById(R.id.video_view2);
-        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.momovie;
+        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.video2;
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
 
