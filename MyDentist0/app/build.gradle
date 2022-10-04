@@ -47,4 +47,5 @@ dependencies {
     annotationProcessor 'androidx.room:room-compiler:2.4.2'
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     implementation 'com.makeramen:roundedimageview:2.3.0'
+
 }
