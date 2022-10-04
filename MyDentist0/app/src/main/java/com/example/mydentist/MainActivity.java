@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         mUserDao = database.userDao(); //interface 객체 할당
 
-        //데이타 삽입
+//        데이타 삽입
         User user = new User(); // 객체 인스턴스 생성
         user.setName("Jo");
         user.setAge("25");
@@ -101,12 +101,12 @@ public class MainActivity extends AppCompatActivity {
                     teethList.get(i).getLocate() + "\n");
         }
 
-//
+
 //        UserDatabase database = Room.databaseBuilder(getApplicationContext(), UserDatabase.class, "MyDentist")
 //                .fallbackToDestructiveMigration()   //스키마 데이타베이스 버전변경 가능
 //                .allowMainThreadQueries()           //메인 쓰레드에서 db에 Io(Input 입력, output 출력) 가능하게함
 //                .build();
-//
+
 //        mUserDao = database.userDao(); //interface 객체 할당
 
 
