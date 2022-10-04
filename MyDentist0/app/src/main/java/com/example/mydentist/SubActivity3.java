@@ -29,9 +29,9 @@ public class SubActivity3 extends AppCompatActivity {
         viewPager2 = findViewById(R.id.viewSlider);
 
         List<SliderItem> sliderItems = new ArrayList<>();
-        sliderItems.add(new SliderItem(R.drawable.ex1));
-        sliderItems.add(new SliderItem(R.drawable.ex2));
-        sliderItems.add(new SliderItem(R.drawable.ex3));
+        sliderItems.add(new SliderItem(R.drawable.exx1));
+        sliderItems.add(new SliderItem(R.drawable.exx2));
+        sliderItems.add(new SliderItem(R.drawable.exx3));
 
         viewPager2.setAdapter(new SliderAdapter(sliderItems, viewPager2));
 
