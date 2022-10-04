@@ -16,7 +16,7 @@ public class denture_manage extends AppCompatActivity {
 
 
         VideoView videoView = findViewById(R.id.video_view4);
-        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.momovie;
+        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.video2;
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
 
