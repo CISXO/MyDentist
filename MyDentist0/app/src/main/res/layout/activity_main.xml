@@ -11,6 +11,7 @@
     android:gravity="center"
     android:background="@color/white"
     >
+
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,17 +39,16 @@
 <!--        android:background="@drawable/tooth1"-->
 <!--        android:layout_marginBottom="20dp"-->
 <!--        />-->
-    <pl.droidsonroids.gif.GifImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/liion"
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main"
         />
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:layout_gravity="center"
-        android:layout_weight="5"
-        android:background="@color/sky">
+        android:layout_weight="5">
 
         <TableRow
             android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:text="예방\n관리법"
+                android:text="구강\n관리법"
                 android:backgroundTint="@color/bl"
                 />
 
@@ -89,7 +89,7 @@
                 android:layout_width="121dp"
                 android:layout_height="92dp"
                 android:layout_gravity="center"
-                android:text="내원\n데이터"
+                android:text="치과\n사진"
                 android:backgroundTint="@color/bl"
                 />
 
