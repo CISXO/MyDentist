@@ -1,5 +1,7 @@
 package com.example.mydentist;
 
+import android.content.Intent;
+
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -60,6 +62,7 @@ public class User {
     public void setPasswd(String passwd) {
         this.passwd = passwd;
     }
+
 
     //getter & setter 가져오거나 세팅을 하기위한 준비단계
 

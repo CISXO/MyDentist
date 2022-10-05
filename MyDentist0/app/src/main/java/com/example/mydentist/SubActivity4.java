@@ -11,6 +11,11 @@ import java.util.List;
 public class SubActivity4 extends AppCompatActivity {
 
     private UserDao mUserDao;
+    private TextView name1;
+    private TextView id1;
+    private TextView age1;
+    private TextView eMail1;
+
 
     @Override
 
@@ -18,7 +23,10 @@ public class SubActivity4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub4);
-//
+        name1 = findViewById(R.id.name1);
+        id1 = findViewById(R.id.id1);
+        age1 = findViewById(R.id.age1);
+        eMail1 = findViewById(R.id.eMail1);
 
         UserDatabase database = Room.databaseBuilder(getApplicationContext(), UserDatabase.class, "MyDentist")
                 .fallbackToDestructiveMigration()   //스키마 데이타베이스 버전변경 가능
@@ -26,7 +34,11 @@ public class SubActivity4 extends AppCompatActivity {
                 .build();
 
         mUserDao = database.userDao();
+//
+//        List<User> userList = mUserDao.getUserAll();
+//        userList.get(1).getName()
 
-        List<User> userList = mUserDao.getUserAll();
+//        name1.setText(database.userDao().getUserAll().toString());
+
     }
 }
