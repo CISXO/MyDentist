@@ -180,6 +180,7 @@
 
 
 
+
     android:background="@color/sky"
     tools:context=".SubActivity1">
 
@@ -367,6 +368,22 @@
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="2dp"
+        android:background="#00ff0000"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

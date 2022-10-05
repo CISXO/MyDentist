@@ -9,6 +9,10 @@ import android.annotation.SuppressLint;
 import android.annotation.SuppressLint;
 
 
+import android.annotation.SuppressLint;
+
+
+
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -26,16 +30,28 @@ public class SubActivity1 extends AppCompatActivity implements View.OnClickListe
 
 
 
+public class SubActivity1 extends AppCompatActivity implements View.OnClickListener {
+    @SuppressLint("MissingInflatedId")
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub1);
+
+
+
 
         findViewById(R.id.button01).setOnClickListener(this);
         findViewById(R.id.button02).setOnClickListener(this);
         findViewById(R.id.button03).setOnClickListener(this);
         findViewById(R.id.button04).setOnClickListener(this);
         findViewById(R.id.button05).setOnClickListener(this);
+
+
+
 
         findViewById(R.id.button06).setOnClickListener(this);
         findViewById(R.id.button07).setOnClickListener(this);
@@ -198,6 +214,5 @@ public class SubActivity1 extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
-
 
 }
