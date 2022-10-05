@@ -15,7 +15,7 @@ public class video_teeth1 extends AppCompatActivity {
         setContentView(R.layout.activity_video_teeth1);
 
         VideoView videoView = findViewById(R.id.video_view);
-        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.video2;
+        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.video1;
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
 

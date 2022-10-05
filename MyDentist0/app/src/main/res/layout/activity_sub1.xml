@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:background="@color/sky"
     tools:context=".SubActivity1">
 
@@ -13,34 +12,21 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/teeth"
         tools:ignore="MissingConstraints" />
 
-
-    <Button
-        android:id="@+id/button01"
-        android:layout_width="46dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="300dp"
-        android:background="#00ff0000"
-        android:text=" "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
     <Button
         android:id="@+id/button02"
         android:layout_width="51dp"
         android:layout_height="52dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="452dp"
         android:background="#00ff0000"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button01"
+        android:text=" "
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -48,10 +34,8 @@
         android:id="@+id/button03"
         android:layout_width="44dp"
         android:layout_height="36dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="48dp"
         android:background="#00ff0000"
-        android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/button02"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
@@ -60,22 +44,20 @@
         android:id="@+id/button04"
         android:layout_width="42dp"
         android:layout_height="35dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="68dp"
         android:background="#00ff0000"
-        android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/button03"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
+
 
     <Button
         android:id="@+id/button05"
         android:layout_width="31dp"
         android:layout_height="39dp"
         android:layout_marginStart="88dp"
-        android:layout_marginBottom="4dp"
+        android:text=" "
         android:background="#00ff0000"
-        android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/button04"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
@@ -86,7 +68,7 @@
         android:layout_height="39dp"
         android:layout_marginStart="120dp"
         android:layout_marginBottom="600dp"
-        android:text="Button"
+        android:text=" "
         android:background="#00ff0000"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,7 +80,7 @@
         android:layout_height="42dp"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="616dp"
-        android:text="Button"
+        android:text=" "
         android:background="#00ff0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button06"
@@ -108,11 +90,11 @@
         android:id="@+id/button08"
         android:layout_width="39dp"
         android:layout_height="47dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="68dp"
-        android:background="#00ff0000"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="92dp"
         android:rotation="27"
-        android:text="Button"
+        android:text=" "
+        android:background="#00ff0000"
         app:layout_constraintStart_toEndOf="@+id/button07"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -120,188 +102,12 @@
     <Button
         android:id="@+id/button09"
         android:layout_width="30dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="88dp"
-        android:background="#00ff0000"
-        android:rotation="-2"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button08"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="35dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="112dp"
-        android:background="#00ff0000"
-        android:rotation="11"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button09"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="43dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="300dp"
-        android:background="#00ff0000"
-        android:rotation="-23"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="47dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="316dp"
-        android:background="#00ff0000"
-        android:rotation="-23"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="316dp"
-        android:background="#00ff0000"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12"
-        tools:ignore="MissingConstraints" />
-
-
-
-
-    android:background="@color/sky"
-    tools:context=".SubActivity1">
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/teeth"
-        tools:ignore="MissingConstraints" />
-
-
-    <Button
-        android:id="@+id/button01"
-        android:layout_width="46dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="300dp"
-        android:background="#00ff0000"
-        android:text=" "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/button02"
-        android:layout_width="51dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="16dp"
-        android:background="#00ff0000"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button01"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button03"
-        android:layout_width="44dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="16dp"
-        android:background="#00ff0000"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button02"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button04"
-        android:layout_width="42dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="8dp"
-        android:background="#00ff0000"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button03"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button05"
-        android:layout_width="31dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginBottom="4dp"
-        android:background="#00ff0000"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button04"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button06"
-        android:layout_width="31dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="600dp"
-        android:text="Button"
-        android:background="#00ff0000"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button07"
-        android:layout_width="41dp"
         android:layout_height="42dp"
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="616dp"
-        android:text="Button"
-        android:background="#00ff0000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button06"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button08"
-        android:layout_width="39dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="68dp"
-        android:background="#00ff0000"
-        android:rotation="27"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button07"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button09"
-        android:layout_width="30dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="88dp"
-        android:background="#00ff0000"
+        android:layout_marginTop="108dp"
         android:rotation="-2"
-        android:text="Button"
+        android:text=" "
+        android:background="#00ff0000"
         app:layout_constraintStart_toEndOf="@+id/button08"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -310,11 +116,9 @@
         android:id="@+id/button10"
         android:layout_width="35dp"
         android:layout_height="42dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="132dp"
         android:background="#00ff0000"
         android:rotation="11"
-        android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/button09"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
@@ -323,10 +127,9 @@
         android:id="@+id/button11"
         android:layout_width="43dp"
         android:layout_height="37dp"
-        android:layout_marginStart="300dp"
+        android:layout_marginStart="284dp"
         android:background="#00ff0000"
         android:rotation="-23"
-        android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button10"
         tools:ignore="MissingConstraints" />
@@ -335,10 +138,9 @@
         android:id="@+id/button12"
         android:layout_width="47dp"
         android:layout_height="35dp"
-        android:layout_marginStart="316dp"
+        android:layout_marginStart="300dp"
         android:background="#00ff0000"
         android:rotation="-23"
-        android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button11"
         tools:ignore="MissingConstraints" />
@@ -347,44 +149,48 @@
         android:id="@+id/button13"
         android:layout_width="49dp"
         android:layout_height="49dp"
-        android:layout_marginStart="316dp"
+        android:layout_marginStart="308dp"
         android:background="#00ff0000"
-        android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button12"
         tools:ignore="MissingConstraints" />
 
 
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="53dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="324dp"
-        android:layout_marginTop="2dp"
-        android:background="#00ff0000"
-        android:text="Button"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="86dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="384dp"
+        android:tintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button13"
-        tools:ignore="MissingConstraints" />
+        app:srcCompat="@drawable/tooth1"
+        app:tint="#40FF0000" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="87dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="392dp"
+        android:tintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tooth2"
+        app:tint="#7EFF0000" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="53dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="324dp"
-        android:layout_marginTop="2dp"
-        android:background="#00ff0000"
-        android:text="Button"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="86dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="208dp"
+        android:tintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button13"
-        tools:ignore="MissingConstraints" />
+        app:srcCompat="@drawable/tooth3"
+        app:tint="#BCFF0000" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
